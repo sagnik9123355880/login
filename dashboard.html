@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Detection Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Criminal Detection Dashboard</h1>
+            <p>Use the face recognition system to verify identity.</p>
+        </header>
+
+        <div class="face-scan-area">
+            <p>Face Recognition Area</p>
+            <div class="camera-frame">
+                <video id="camera-stream" autoplay playsinline></video>
+                <canvas id="snapshot" class="snapshot"></canvas>
+            </div>
+            <button onclick="takePicture()" class="take-picture-btn">
+                <span class="material-icons">camera</span> Take Picture
+            </button>
+            <div id="scan-result" class="scan-result"></div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
